@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        :root{
+            --backgroundColor: rgb(123, 240, 244);
+            --bordercolor: rgb(137, 158, 206);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            margin: 10px;
+            border: 1px solid var(--bordercolor);
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .nav{
+            border: 1px solid var(--bordercolor);
+            font-size: 10px;
+            background-color: var(--backgroundColor);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Dropdown</li>
+        </ul>
+    </div>
+</body>
+</html>

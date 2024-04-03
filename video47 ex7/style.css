@@ -1,0 +1,110 @@
+.logo {}
+
+.logo img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Segoe UI;
+}
+
+.right ul {
+    display: flex;
+    gap: 30px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li svg {
+    padding: 0 5px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10pxpx;
+    margin: 30px;
+}
+
+.first span {
+    font-size: 48px;
+    font-family: 'Segoe UI';
+}
+
+.first strong {
+    font-size: 50px;
+    font-family: 'Segoe UI';
+}
+.first p{
+    font-size: 24px;
+    width: 49vw;
+    text-align: center;
+    font-weight: 500;
+}
+.second{
+    max-width: 70vw;
+    margin: auto;
+}
+
+.btn{
+background-color: rgb(52, 160, 160);
+    padding: 14px 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 12px 0;
+    cursor: pointer;
+}
+.green{
+    background-color: green;
+}
+.item{
+    padding: 23px;
+    background-color: rgb(217, 224, 231);
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 23px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-top: 10px;
+}
+.downloade :nth-child(1){
+font-size: 23px;
+font-weight: bold;
+font-family: sans-serif;
+}
+.small{
+    font-family: sans-serif;
+    font-size: 19px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1100px){
+    .grid{
+        grid-template-columns: 1fr ;
+    }
+}

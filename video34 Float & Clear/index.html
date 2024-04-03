@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: right;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://t3.ftcdn.net/jpg/00/22/40/54/360_F_22405456_UNpb0FHL8WcUrszEeEnwmdI59bA7muB6.jpg" width="250" alt="">
+        <div class="card"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio consequuntur et rerum vel nesciunt ex ut dolorum doloribus sequi aliquam, ab odit iste voluptatibus, inventore esse assumenda repellat eos corporis consectetur numquam ipsa in.</p></div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita omnis enim magni cum alias, soluta quia vero perferendis placeat nisi cumque quasi autem nostrum facilis quo sed perspiciatis voluptates animi debitis corrupti assumenda dolore voluptatum nobis sunt? Debitis, dolore taque cumque sit vero harum in dolore culpa veli quae! Commodi similique inventore possimus, recusandae beatae dolore iure, accusamus id amet nemo, quia necessitatibus? Repudiandae quo sapiente libero et totam possimus reprehenderit. Veritatis suscipit, sint laborum voluptatum doloremque deserunt magni! Quidem ducimus aliquam iure distinctio.</div>
+        <div class="card">Card 2</div>
+    </div>
+</body>
+</html>

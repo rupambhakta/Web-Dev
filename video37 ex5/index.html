@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        :root {
+            --backgroundColor: rgb(123, 240, 244);
+            --bordercolor: rgb(137, 158, 206);
+            --boxSixe: 300px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 10px;
+            border: 1px solid var(--bordercolor);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .nav {
+            border: 1px solid var(--bordercolor);
+            font-size: 10px;
+            background-color: var(--backgroundColor);
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        .box {
+            background-color: green;
+            height: 345px;
+            border: 2px solid gray;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            padding: 55px;
+        }
+
+        .box1 {
+            width: var(--boxSixe);
+            height: var(--boxSixe);
+            background-color: bisque;
+        }
+
+        .box2 {
+            width: var(--boxSixe);
+            height: var(--boxSixe);
+            background-color: blue;
+        }
+
+        .inner-box {
+            /* width: 100px; */
+            /* Set width of inner boxes as needed */
+            /* height: 100px; */
+            /* Just for visibility, set background color as desired */
+            margin-right: 800px;
+            /* Add margin between inner boxes */
+        }
+
+        .inner-box:last-child {
+            margin-right: 0;
+            /* Remove margin from last inner box to prevent extra space */
+        }
+
+        .c {
+            height: 100px;
+            width: 100%;
+            border: 2px solid rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .comment {
+            width: 400px;
+            height: 80px;
+            border: 1px solid gray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border-radius: 50%;
+            overflow: hidden;
+            align-items: end;
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            position: fixed;
+        }
+
+        .logo img {
+            width: 100%;
+            /* Ensure the image fills the circular box */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Ensure proper positioning */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Dropdown</li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="box1 inner-box">
+        </div>
+        <div class="box2 inner-box">
+        </div>
+    </div>
+    <div class="c">
+        <div class="comment">
+            Welcome to the sigma development Course.
+        </div>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="logo2.png" width="90" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        @copyright Rupam Bhakta
+    </div>
+</body>
+
+</html>

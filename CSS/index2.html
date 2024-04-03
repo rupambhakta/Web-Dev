@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selecter</title>
+    <style>
+        /* class selector */
+        .red {
+            background-color: antiquewhite;
+        }
+
+        /* id selector */
+        #green {
+            background-color: greenyellow;
+        }
+
+        #color {
+            color: yellow;
+            background-color: black;
+        }
+
+        /* child selector */
+        div>p {
+            color: beige;
+            background-color: black;
+        }
+        /* Decendant selecter */
+        div p {
+            color: beige;
+            background-color: black;
+        }
+        /* Univertial selecter */
+        * {
+            margin:0dp;
+            padding:0dp;
+        }
+        /* Pseudo selecter */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: red;
+        }
+        a:hover{
+            background-color: blue;
+            color: white;
+        }
+        p:first-child{
+            color: rgb(15, 146, 146);
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <span id="color">Hii this is Rupam Bakta.</span>
+    </center>
+
+    <main>
+        <p>First paragrapg</p>
+        <p>Second paragrapg</p>
+    </main>
+
+    <div class="red">I am a Div
+        <p>Para insider dic</p>
+    </div>
+
+    <div id="green">This is second div.</div>
+
+    <a href="https:\\google.com">Go to google</a>
+    <a href="https:\\facebook.com">Go to Facebook</a>
+</body>
+
+</html>
