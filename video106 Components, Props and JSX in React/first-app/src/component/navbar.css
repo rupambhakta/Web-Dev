@@ -1,0 +1,7 @@
+nav,ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    background-color: beige;
+    padding: 15px;
+}
